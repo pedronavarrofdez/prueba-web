@@ -8,4 +8,4 @@ Estoy probando como funciona esto, mira otros repositorios más interesantes and
 
 ---
 
-web: [link](https://<pedronavarrofdez>.github.io/<prueba-web>/)
+web: [link](https://pedronavarrofdez.github.io/prueba-web/)
