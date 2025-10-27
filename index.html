@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My HTML + SQL Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome — HTML & SQL demo</h1>
+    <p>This page is hosted from a GitHub repository (GitHub Pages). Below is a tiny SQL example you can run locally.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sample SQL</h2>
+      <pre>
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL
+);
+
+INSERT INTO users (name, email) VALUES
+  ('Alice', 'alice@example.com'),
+  ('Bob', 'bob@example.com');
+
+SELECT * FROM users;
+      </pre>
+      <p>To run this locally with SQLite:</p>
+      <code>sqlite3 sample.db &lt; sample.sql</code>
+    </section>
+
+    <section>
+      <h2>Next steps</h2>
+      <ol>
+        <li>Put these files in a GitHub repo.</li>
+        <li>Enable GitHub Pages to publish the site.</li>
+        <li>Run the SQL locally with sqlite3 or use a hosted DB (Supabase) for a full demo.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for learning — try editing this page and push to see changes live.</p>
+  </footer>
+</body>
+</html>
